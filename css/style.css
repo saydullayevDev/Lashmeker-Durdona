@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700&display=swap');
+
+*,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  /* background: rgb(148, 115, 121); */
+  /* color: #ffffff; */
+}
+
+.container {
+  width: 1200px;
+  margin: 10px auto;
+}
+#header {
+  height: 100vh;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+.register p,
+span {
+  background: transparent;
+}
+#flag {
+  width: 110px;
+  height: 56px;
+  margin: 0 auto;
+  box-sizing: content-box;
+  padding-top: 15px;
+  position: relative;
+  background: red;
+  color: white;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+#flag:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 13px solid #fff;
+  border-left: 55px solid transparent;
+  border-right: 55px solid transparent;
+}
+/*! form */
+#body .register {
+  width: fit-content;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  margin: 0 auto;
+}
+#body h2 {
+  font-size: 2rem;
+  margin: 30px 0;
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+}
+#body .register input {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-bottom: 2px solid #777777;
+  margin-bottom: 20px;
+  font-size: 16px;
+  outline: none;
+}
+#body .btn {
+  border: none !important;
+  cursor: pointer;
+  background-color: red;
+  color: #fff;
+  margin: 15px 0;
+  font-size: 16px;
+  width: 100%;
+  padding: 14px;
+  transform: transition 0.5s ease;
+  border-radius: 12px;
+}
+#body .btn:hover {
+  background-color: darkred;
+  color: white;
+}
+#body .btn h5 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.1rem;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .container {
+    width: 90vw;
+  }
+  #header {
+    position: relative;
+    margin-bottom: 2rem;
+  }
+  #header .img {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../img/expert1.png);
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    border-radius: 12px;
+  }
+  #header .img img {
+    display: none;
+  }
+  #header .register {
+    position: absolute;
+    top: 70vh;
+    background: unset;
+  }
+  #header h3 {
+    letter-spacing: 0.5px;
+    font-size: 1.6rem;
+    margin: 5px;
+    font-weight: 600;
+  }
+  #header h4 {
+    letter-spacing: 0.1px;
+    font-size: 0.9rem;
+    margin: 5px;
+    font-weight: 500;
+  }
+  #header #flag h6 {
+    font-size: 0.7rem;
+  }
+  /* body */
+  #body h3 {
+    text-align: center;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 1rem;
+  }
+  #body .row {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+    /* overflow-x: hidden; */
+  }
+  #body .box {
+    text-align: center;
+    padding: 7px;
+    /* border-radius: 12px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #body .box h5 {
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  #body .box {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  }
+  #body #form {
+    width: 80vw;
+    margin: 0 auto;
+  }
+  #body h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+  }
+  #body .btn h5 {
+    font-size: 1.3rem;
+  }
+  .register p {
+    font-size: 0.9rem;
+    margin: 0 0 2rem 0;
+  }
+}

@@ -29,7 +29,7 @@ function emailSend() {
     .then(() => {
       setTimeout(() => {
         location.href = 'https://t.me/durdona_djurayevaa' //! telegram Admin
-      }, 1000)
+      }, 500)
     })
 }
 //

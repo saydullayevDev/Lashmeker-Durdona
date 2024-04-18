@@ -143,8 +143,8 @@ span {
   }
   #body .row {
     display: grid;
-    grid-template-columns: 2fr 1fr;
-    gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
     /* overflow-x: hidden; */
   }
   #body .box {
@@ -154,15 +154,12 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 140px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
   #body .box h5 {
     letter-spacing: 1px;
     font-weight: 400;
-  }
-  #body .box {
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
-      rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   }
   #body #form {
     width: 80vw;

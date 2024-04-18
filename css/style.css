@@ -139,7 +139,7 @@ span {
     text-align: center;
     font-weight: 500;
     letter-spacing: 1px;
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
   }
   #body .row {
     display: grid;
@@ -148,6 +148,7 @@ span {
     /* overflow-x: hidden; */
   }
   #body .box {
+    height: 200px;
     text-align: center;
     padding: 7px;
     /* border-radius: 12px; */

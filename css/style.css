@@ -28,7 +28,8 @@ span {
   height: 56px;
   margin: 0 auto;
   box-sizing: content-box;
-  padding-top: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: relative;
   background: red;
   color: white;
@@ -137,6 +138,9 @@ span {
 }
 .line {
   text-decoration: line-through;
+}
+.lowerCase {
+  text-transform: lowercase;
 }
 
 @media only screen and (min-width: 320px) and (max-width: 600px) {
